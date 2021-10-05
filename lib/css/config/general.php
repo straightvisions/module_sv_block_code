@@ -1,6 +1,6 @@
 <?php
 	echo $_s->build_css(
-		is_admin() ? '.editor-styles-wrapper .wp-block-quote' : '.sv100_sv_content_wrapper article .wp-block-quote',
+		is_admin() ? '.editor-styles-wrapper .wp-block-quote' : '.wp-block-quote',
 		array_merge(
 			$module->get_setting('font')->get_css_data('font-family'),
 			$module->get_setting('font_size')->get_css_data('font-size','','px'),
@@ -13,7 +13,7 @@
 	);
 
 echo $_s->build_css(
-	is_admin() ? '.editor-styles-wrapper .wp-block-quote p' : '.sv100_sv_content_wrapper article .wp-block-quote p',
+	is_admin() ? '.editor-styles-wrapper .wp-block-quote p' : '.wp-block-quote p',
 	array_merge(
 		$module->get_setting('font')->get_css_data('font-family'),
 		$module->get_setting('font_size')->get_css_data('font-size','','px'),
